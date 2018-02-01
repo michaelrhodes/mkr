@@ -8,6 +8,6 @@
   "dependencies": {
     "ini": "~1.3.5",
     "module-root": "~0.2.0",
-    "zcc": "github:michaelrhodes/zcc#1.0.0"
+    "zcc": "github:michaelrhodes/zcc#2.0.0"
   }
 }
