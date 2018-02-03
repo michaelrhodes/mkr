@@ -9,7 +9,9 @@ module.exports = format
 
 function format () {
   var existing = read(filepath)
-  var epkg = existing && JSON.parse(existing) || {}
+  if (!existing) return
+
+  var epkg = JSON.parse(existing)
   var pkg = {}
 
   pkg.name = epkg.name
