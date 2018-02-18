@@ -1,14 +1,14 @@
 var root = require('module-root')()
-var repo = require('./util/repo')
-var filepath = require('./util/filepath')
 var stringify = require('./util/stringify')
+var mpath = require('./util/mpath')
 var write = require('./util/write')
 var read = require('./util/read')
+var repo = require('./util/repo')
 
 module.exports = format
 
 function format () {
-  var existing = read(filepath)
+  var existing = read(mpath.pkg)
   if (!existing) return
 
   var epkg = JSON.parse(existing)
@@ -30,5 +30,5 @@ function format () {
   pkg.peerDependencies = epkg.peerDependencies
   pkg.devDependencies = epkg.devDependencies
 
-  write(filepath, stringify(pkg))
+  write(mpath.pkg, stringify(pkg))
 }
