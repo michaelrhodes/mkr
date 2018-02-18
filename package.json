@@ -1,6 +1,6 @@
 {
   "name": "mkr",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "bin": "bin.js",
   "repository": "git@github.com:michaelrhodes/mkr",
