@@ -29,7 +29,8 @@ function init () {
     var pkg = JSON.parse(read(mpath.pkg))
     write(mpath.readme, bind(tpl, {
       name: pkg.name,
-      description: pkg.description || ''
+      version: pkg.version,
+      description: pkg.description || '',
     }))
   }
 }
