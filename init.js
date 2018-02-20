@@ -16,7 +16,7 @@ function init () {
     write(mpath.pkg, stringify({
       name: path.basename(cwd),
       author: 'Michael Rhodes',
-      version: '0.0.0',
+      version: '1.0.0',
       main: 'index.js',
       repository: repo(cwd),
       license: 'MIT'
