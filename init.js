@@ -29,8 +29,10 @@ function init () {
     var pkg = JSON.parse(read(mpath.pkg))
     write(mpath.readme, bind(tpl, {
       name: pkg.name,
+      author: pkg.author || '',
       version: pkg.version,
       description: pkg.description || '',
+      year: new Date().getFullYear()
     }))
   }
 }
