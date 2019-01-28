@@ -4,7 +4,7 @@
 
 ## install
 ```sh
-pnpm install michaelrhodes/{name}#{version}
+npm install michaelrhodes/{name}#{version}
 ```
 
 ## use
