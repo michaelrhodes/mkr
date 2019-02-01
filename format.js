@@ -25,10 +25,10 @@ function format () {
   pkg.description = epkg.description
   pkg.keyword = epkg.keywords
   pkg.license = epkg.license
-  pkg.scripts = epkg.scripts
   pkg.dependencies = epkg.dependencies
   pkg.peerDependencies = epkg.peerDependencies
   pkg.devDependencies = epkg.devDependencies
+  pkg.scripts = epkg.scripts
 
   write(mpath.pkg, stringify(pkg))
 }
