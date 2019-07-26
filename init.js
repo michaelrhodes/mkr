@@ -19,7 +19,7 @@ function init () {
       version: '1.0.0',
       main: 'index.js',
       repository: repo(cwd),
-      license: 'MIT'
+      license: 'CC0-1.0'
     }))
   }
 
@@ -29,10 +29,8 @@ function init () {
     var pkg = JSON.parse(read(mpath.pkg))
     write(mpath.readme, bind(tpl, {
       name: pkg.name,
-      author: pkg.author || '',
       version: pkg.version,
-      description: pkg.description || '',
-      year: new Date().getFullYear()
+      description: pkg.description || ''
     }))
   }
 }
