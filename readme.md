@@ -2,7 +2,7 @@
 
 ## install
 ```sh
-npm install -g michaelrhodes/mkr#1.3.1
+npm install -g michaelrhodes/mkr#2.0.0
 ```
 
 ## use
