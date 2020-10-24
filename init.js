@@ -15,10 +15,7 @@ function init () {
   if (!fs.existsSync(mpath.pkg)) {
     write(mpath.pkg, stringify({
       name: path.basename(cwd),
-      author: 'Michael Rhodes',
-      version: '1.0.0',
-      main: 'index.js',
-      repository: repo(cwd),
+      version: '0.0.0',
       license: 'CC0-1.0'
     }))
   }

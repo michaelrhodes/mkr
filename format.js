@@ -17,6 +17,7 @@ function format () {
   pkg.name = epkg.name
   pkg.author = epkg.author
   pkg.version = epkg.version
+  pkg.license = epkg.license
   pkg.private = epkg.private
   pkg.bin = epkg.bin
   pkg.main = epkg.main
@@ -24,7 +25,6 @@ function format () {
   pkg.repository = epkg.repository || repo(root)
   pkg.description = epkg.description
   pkg.keyword = epkg.keywords
-  pkg.license = epkg.license
   pkg.dependencies = epkg.dependencies
   pkg.peerDependencies = epkg.peerDependencies
   pkg.devDependencies = epkg.devDependencies
